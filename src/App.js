@@ -1,5 +1,6 @@
 import React from 'react';
-import './scss/App.scss';
+// import './sass/_app.sass';
+import './index.css'
 import Home from './components/home/Home'
 import Work from './components/work/Work'
 import About from './components/about/About'
