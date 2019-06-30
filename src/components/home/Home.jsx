@@ -9,13 +9,13 @@ const Home = () => {
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
         <LinkContainer>
-          <p>Links</p>
-          <p>Go</p>
-          <p>Here</p>
-        </LinkContainer>
-        <ScrollArrow>
+          <div>
+            <p>Links</p>
+            <p>Go</p>
+            <p>Here</p>
+          </div>
           <p>Click me to scroll down</p>
-        </ScrollArrow>
+        </LinkContainer>
       </TitleContainer>
     </Container>
   )
@@ -27,10 +27,11 @@ const Container = Styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #386C99;
+  /* background-color: #386C99; */
+  background-color: #FFCA25;
 `;
 const TitleContainer = Styled.div`
-  background-color: #FFCA25;
+  /* background-color: #FFCA25; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,31 +46,38 @@ const MainText = Styled.div`
   align-items: center;
   justify-content: center;
   felx-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
+  flex-grow: 1;
 
   h1 {
-    margin: 1rem;
-    color: #fff;
+    margin: 2rem 1rem;
+    color: #386C99;
   }
 `;
 const LinkContainer = Styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 2px solid black;
-  width: 100%;
-
-  p {
-    border-bottom: 2px solid white;
-  }
-`;
-const ScrollArrow = Styled.div`
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    p {
+      border-bottom: 2px solid white;
+      color: #386C99;
+    }
+  }
+
+  p {
+    color: #386C99;
+  }
 `;
 
 export default Home
