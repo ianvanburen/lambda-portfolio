@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Styled from 'styled-components'
 
 const Home = () => {
@@ -10,9 +10,9 @@ const Home = () => {
         </MainText>
         <LinkContainer>
           <div>
-            <p>Links</p>
-            <p>Go</p>
-            <p>Here</p>
+            <p>Projects</p>
+            <p>About</p>
+            <p>Contact</p>
           </div>
           <p>Click me to scroll down</p>
         </LinkContainer>
@@ -28,7 +28,7 @@ const Container = Styled.div`
   justify-content: center;
   height: 100vh;
   /* background-color: #386C99; */
-  background-color: #FFCA25;
+  /* background-color: #FFCA25; */
 `;
 const TitleContainer = Styled.div`
   /* background-color: #FFCA25; */
@@ -70,7 +70,7 @@ const LinkContainer = Styled.div`
     width: 100%;
 
     p {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid #FFCA25;
       color: #386C99;
     }
   }
