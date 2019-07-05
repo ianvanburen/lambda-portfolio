@@ -15,6 +15,8 @@ const Project = props => {
       </ProjectContainer>
     </>
   )
+
+  
 }
 
 const ProjectContainer = Styled.div`
@@ -22,8 +24,6 @@ const ProjectContainer = Styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem 0; */
-  /* padding: 1rem 0; */
   width: 100%;
 `
 
@@ -33,15 +33,15 @@ const ProjectItem = Styled.div`
   justify-content: center;
   width: 90%;
   height: 200px;
-  /* height: 180px; */
+  cursor: pointer;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 2s ease-in;
+  transition-duration: .2s;
 
   :hover {
     background-size: 120%;
-    /* transition: .2 ease-in; */
+    transition-duration: .2s;
   }
 `
 

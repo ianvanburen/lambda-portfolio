@@ -39,7 +39,7 @@ const WorkContainer = Styled.div`
   /* height: 100vh; */
   width: 100%;
   padding: 1rem 0;
-  background-color: #FFCA25;
+  /* background-color: #FFCA25; */
 `
 
 // const ExampleProject = Styled.div`
