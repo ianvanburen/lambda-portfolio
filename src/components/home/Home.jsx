@@ -21,6 +21,7 @@ const Home = () => {
   )
 }
 
+// TODO: Create global components container to use across sections
 const Container = Styled.div`
   display: flex;
   flex-direction: column;
