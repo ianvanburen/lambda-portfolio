@@ -4,7 +4,7 @@ import Styled from 'styled-components'
 const Project = props => {
   return (
     <>
-      <ProjectContainer>
+      <ProjectContainer > 
         {/* <ProjectItem src={`../../images/${props.image}.jpg`} alt={props.image}/> */}
         {/* <ProjectItem src={`public/images/img1.jpg`} alt={props.image}/> */}
         <ProjectItem style={
@@ -15,33 +15,38 @@ const Project = props => {
       </ProjectContainer>
     </>
   )
+
+  
 }
 
+// TODO: Create global components container to use across sections
 const ProjectContainer = Styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem 0; */
-  /* padding: 1rem 0; */
   width: 100%;
+  /* margin: 0; */
+  /* padding: none; */
+  /* border: 3px solid red; */
 `
 
 const ProjectItem = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   height: 200px;
-  /* height: 180px; */
+  cursor: pointer;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 2s ease-in;
+  transition-duration: .2s;
 
   :hover {
-    background-size: 120%;
-    /* transition: .2 ease-in; */
+    /* background-size: 120%; */
+    transition-duration: .2s;
+    
   }
 `
 

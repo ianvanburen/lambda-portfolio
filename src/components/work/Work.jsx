@@ -1,36 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Styled from 'styled-components'
 
 // import * as images from '../../images/..'
 import Project from '../project/Project'
+// import { file } from '@babel/types';
 
 
-class Work extends Component {
-  state = {
-    images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6']
-  }
-
-  componentDidMount = () => {
-    console.log('IMAGES: ', this.state.images);
-  }
-  render(){
-    return (
-      <WorkContainer>
-        {this.state.images.map(image => (
-          <Project image={image} key={image}></Project>
-        ))}
-        {/* <Project image='../../images/img1.jpg'></Project>
-        <Project image='../../images/img2.jpg'></Project>
-        <Project image='../../images/img3.jpg'></Project>
-  
-        <Project image='../../images/img4.jpg'></Project>
-        <Project image='../../images/img5.jpg'></Project>
-        <Project image='../../images/img6.jpg'></Project> */}
-      </WorkContainer>
-    )
-  }
+const Work = props => {
+  return (
+    <WorkContainer>
+      {props.images.map(image => (
+        <Project 
+          image={image} 
+          key={image}
+        />
+      ))}
+    </WorkContainer>
+  )
 }
 
+
+// TODO: Create global components container to use across sections
 const WorkContainer = Styled.div`
   display: flex;
   flex-direction: column;
@@ -38,8 +28,8 @@ const WorkContainer = Styled.div`
   justify-content: flex-start;
   /* height: 100vh; */
   width: 100%;
-  padding: 1rem 0;
-  background-color: #FFCA25;
+  /* padding: 1rem 0; */
+  /* background-color: #FFCA25; */
 `
 
 // const ExampleProject = Styled.div`
