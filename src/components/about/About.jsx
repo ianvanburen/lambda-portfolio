@@ -3,7 +3,7 @@ import Styled from 'styled-components'
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="About" >
       {/* <h2>About</h2> */}
       <ImageContainer>
         <img src="https://media.licdn.com/dms/image/C4E03AQE8TXApk7qYMw/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=KszW7r7LR10hiYzLMkg38dDlS66bzZYaQ0LJW88xPrg" alt="That's Me!"/>

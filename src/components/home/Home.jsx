@@ -3,16 +3,16 @@ import Styled from 'styled-components'
 
 const Home = () => {
   return (
-    <Container>
+    <Container id="Home" >
       <TitleContainer>
         <MainText >
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
         <LinkContainer>
           <div>
-            <p>Projects</p>
-            <p>About</p>
-            <p>Contact</p>
+            <a href="#Work">Projects</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
           </div>
           <p>Click me to scroll down</p>
         </LinkContainer>
@@ -70,7 +70,9 @@ const LinkContainer = Styled.div`
     justify-content: space-around;
     width: 100%;
 
-    p {
+    a {
+      text-decoration: none;
+      color: white;
       border-bottom: 2px solid #FFCA25;
       color: #386C99;
     }

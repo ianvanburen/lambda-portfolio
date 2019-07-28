@@ -8,7 +8,7 @@ import Project from '../project/Project'
 
 const Work = props => {
   return (
-    <WorkContainer>
+    <WorkContainer id="Work" > 
       {props.images.map(image => (
         <Project 
           image={image} 
