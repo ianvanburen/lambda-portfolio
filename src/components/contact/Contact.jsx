@@ -3,19 +3,19 @@ import Styled from 'styled-components'
 
 const Contact = () => {
   return (
-    <ComponentContainer>
+    <ComponentContainer id="Contact" >
       <TextContainer>
         <h1>Let's connect!</h1>
         <p>A bunch of words telling you why you should drop me a line! And maybe a few more to say a couple other things, but keep it short.</p>
       </TextContainer>
       <LinkContainer>
-        <a href="https://www.linkedin.com">
+        <a href="https://www.linkedin.com/in/laurence-van-buren/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://www.linkedin.com">
+        <a href="https://github.com/IVB107" target="_blank">
           <i class="fab fa-github"></i> 
         </a>
-        <a href="https://www.linkedin.com">
+        <a href="mailto:laurence.vanburen@gmail.com" target="_blank">
           <i class="far fa-envelope"></i>
         </a>
       </LinkContainer>
