@@ -1,6 +1,11 @@
 General:
 [] Create global components container to use across sections
-
+[] Add slideout/drawer menu for mobile view
+[] Add breakpoints for tablet, desktop
+[] Add Meyers CSS reset
+[] Add top menu that appears when mobile user starts scrolling down
+[] Add a canvas animation effect on home screen?
+ 
 App.js:
 [] Import images from separate file, map over images and set them on Work component state
 
