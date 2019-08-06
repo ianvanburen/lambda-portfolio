@@ -9,13 +9,25 @@ const Contact = () => {
         <p>A bunch of words telling you why you should drop me a line! And maybe a few more to say a couple other things, but keep it short.</p>
       </TextContainer>
       <LinkContainer>
-        <a href="https://www.linkedin.com/in/laurence-van-buren/" target="_blank">
+        <a 
+          href="https://www.linkedin.com/in/laurence-van-buren/" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/IVB107" target="_blank">
+        <a 
+          href="https://github.com/IVB107" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-github"></i> 
         </a>
-        <a href="mailto:laurence.vanburen@gmail.com" target="_blank">
+        <a 
+          href="mailto:laurence.vanburen@gmail.com" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="far fa-envelope"></i>
         </a>
       </LinkContainer>
