@@ -1,5 +1,5 @@
 General:
-{} Create global components container to use across sections
+[] Create global components container to use across sections
 
 App.js:
 [] Import images from separate file, map over images and set them on Work component state
