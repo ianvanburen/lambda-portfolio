@@ -1,10 +1,11 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const Home = () => {
+const Home = ({ toggleMenu, menuOpen }) => {
   return (
     <Container id="Home" >
       <TitleContainer>
+        <button onClick={() => toggleMenu()}>{menuOpen ? 'Close Menu' : 'Show Menu'}</button>
         <MainText >
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
@@ -14,7 +15,7 @@ const Home = () => {
             <a href="#About">About</a>
             <a href="#Contact">Contact</a>
           </div>
-          <p>Click me to scroll down</p>
+          {/* <p>Click me to scroll down</p> */}
         </LinkContainer>
       </TitleContainer>
     </Container>
@@ -73,8 +74,15 @@ const LinkContainer = Styled.div`
     a {
       text-decoration: none;
       color: white;
-      border-bottom: 2px solid #FFCA25;
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
       color: #386C99;
+      transition: .2s;
+      font-weight: 700;
+
+      &:hover {
+        transiton: .1s;
+        border-bottom: 2px solid #386C99;
+      }
     }
   }
 

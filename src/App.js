@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './index.css'
+
+// import './index.css'
+import Menu from './components/menu/Menu'
 import Home from './components/home/Home'
 import Work from './components/work/Work'
 import About from './components/about/About'
@@ -11,6 +13,7 @@ class App extends Component {
   }
 
   state = {
+    menuOpen: false,
     images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6']
   }
 
@@ -19,10 +22,18 @@ class App extends Component {
     console.log('IMAGES: ', this.state.images);
   }
 
+  toggleMenu = () => {
+    this.setState({ menuOpen: !this.state.menuOpen})
+  }
+
   render() {
     return (
-      <div className="App">
-        <Home />
+      <div>
+        <Menu menuOpen={this.state.menuOpen}/>
+        <Home 
+          toggleMenu={() => this.toggleMenu()} 
+          menuOpen={this.state.menuOpen}
+          />
         <Work 
           images={this.state.images} 
         />
