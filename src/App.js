@@ -21,17 +21,25 @@ class App extends Component {
     // TODO: Import images from separate file, map over images and set them on Work component state
     console.log('IMAGES: ', this.state.images);
   }
-
-  toggleMenu = () => {
-    this.setState({ menuOpen: !this.state.menuOpen})
+  
+  handleClick = () => {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
   }
+
 
   render() {
     return (
-      <div>
-        <Menu menuOpen={this.state.menuOpen}/>
+      <div onClick={this.handleClick}>
+        <Menu
+          id="menu"
+          ref={node => this.node = node}
+          menuOpen={this.state.menuOpen}
+          handleClick={this.handleClick}
+        />
         <Home 
-          toggleMenu={() => this.toggleMenu()} 
+          handleClick={() => this.handleClick()} 
           menuOpen={this.state.menuOpen}
           />
         <Work 

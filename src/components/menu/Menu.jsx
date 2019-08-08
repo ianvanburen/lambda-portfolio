@@ -1,12 +1,15 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const Menu = ({ menuOpen }) => {
-  
+const Menu = ({ menuOpen, handleClick, ref }) => {
 
   return (
-    <MenuContainer className={menuOpen ? 'open' : 'closed'}>
+    <MenuContainer ref={ref} className={menuOpen ? 'open' : 'closed'}>
       <p>I'm a menu!</p>
+      <a href="#Home" onClick={() => handleClick()}>Home</a>
+      <a href="#Work" onClick={() => handleClick()}>Work</a>
+      <a href="#About" onClick={() => handleClick()}>About</a>
+      <a href="#Contact" onClick={() => handleClick()}>Contact</a>
     </MenuContainer>
   )
 }

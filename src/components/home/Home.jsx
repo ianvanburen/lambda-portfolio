@@ -1,11 +1,11 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const Home = ({ toggleMenu, menuOpen }) => {
+const Home = ({ handleClick, menuOpen }) => {
   return (
     <Container id="Home" >
       <TitleContainer>
-        <button onClick={() => toggleMenu()}>{menuOpen ? 'Close Menu' : 'Show Menu'}</button>
+        <button onClick={() => handleClick()}>Menu</button>
         <MainText >
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
