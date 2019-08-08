@@ -1,5 +1,5 @@
 General:
-[] Create global components container to use across sections
+[] Create global styled components/containers to use across project
 [] Add slideout/drawer menu for mobile view
 [] Add breakpoints for tablet, desktop
 [] Add Meyers CSS reset
@@ -20,3 +20,4 @@ Project.jsx:
 [] Adjust margins/padding for Project component (Desktop, Tablet)
 
 Work.jsx:
+[] Replace placeholders with Images/links to actual projects on github

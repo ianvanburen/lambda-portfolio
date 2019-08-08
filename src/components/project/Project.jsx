@@ -16,7 +16,6 @@ const Project = props => {
     </>
   )
 
-  
 }
 
 // TODO: Create global components container to use across sections
@@ -39,13 +38,13 @@ const ProjectItem = Styled.div`
   height: 200px;
   cursor: pointer;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  transition-duration: .2s;
+  transition: .2s ease;
 
   :hover {
-    /* background-size: 120%; */
-    transition-duration: .2s;
+    background-size: 120%;
+    transition: .2s ease;
     
   }
 `

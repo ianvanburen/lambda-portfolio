@@ -14,21 +14,21 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin"></i>
         </a>
         <a 
           href="https://github.com/IVB107" 
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-github"></i> 
+          <i className="fab fa-github"></i> 
         </a>
         <a 
           href="mailto:laurence.vanburen@gmail.com" 
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="far fa-envelope"></i>
+          <i className="far fa-envelope"></i>
         </a>
       </LinkContainer>
     </ComponentContainer>
