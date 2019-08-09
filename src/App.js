@@ -22,24 +22,28 @@ class App extends Component {
     console.log('IMAGES: ', this.state.images);
   }
   
-  handleClick = () => {
-    this.setState({
-      menuOpen: !this.state.menuOpen
-    })
+  handleClick = e => {
+    // console.log('E.TARGET: ', e.target)
+    if (e.target.id !== 'menuBtn' && !this.state.menuOpen){
+      return
+    }
+    else if (e.target.id === 'menu' && this.state.menuOpen){
+      return
+    }
+    this.setState({ menuOpen: !this.state.menuOpen })
   }
 
 
   render() {
     return (
-      <div onClick={this.handleClick}>
+      <div id='app' onClick={e => this.handleClick(e)}>
         <Menu
           id="menu"
-          ref={node => this.node = node}
           menuOpen={this.state.menuOpen}
           handleClick={this.handleClick}
         />
         <Home 
-          handleClick={() => this.handleClick()} 
+          handleClick={e => this.handleClick(e)} 
           menuOpen={this.state.menuOpen}
           />
         <Work 

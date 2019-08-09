@@ -4,20 +4,15 @@ import Styled from 'styled-components'
 const Menu = ({ menuOpen, handleClick, ref }) => {
 
   return (
-    <MenuContainer ref={ref} className={menuOpen ? 'open' : 'closed'}>
+    <MenuContainer id='menu' className={menuOpen ? 'open' : 'closed'}>
       <p>I'm a menu!</p>
-      <a href="#Home" onClick={() => handleClick()}>Home</a>
-      <a href="#Work" onClick={() => handleClick()}>Work</a>
-      <a href="#About" onClick={() => handleClick()}>About</a>
-      <a href="#Contact" onClick={() => handleClick()}>Contact</a>
+      <a href="#Home">Home</a>
+      <a href="#Work">Work</a>
+      <a href="#About">About</a>
+      <a href="#Contact">Contact</a>
     </MenuContainer>
   )
 }
-
-// const Navbar = ({ visible }) => (
-//   <div id="navbar" className={visible ? 'slideIn' : 'slideOut'}>
-//   </div>
-// )
 
 const MenuContainer = Styled.div`
   display: flex;

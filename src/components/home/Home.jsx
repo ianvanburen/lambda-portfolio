@@ -5,7 +5,7 @@ const Home = ({ handleClick, menuOpen }) => {
   return (
     <Container id="Home" >
       <TitleContainer>
-        <button onClick={() => handleClick()}>Menu</button>
+        <button id='menuBtn' onClick={e => handleClick(e)}>Menu</button>
         <MainText >
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
