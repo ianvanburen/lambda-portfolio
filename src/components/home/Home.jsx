@@ -4,8 +4,10 @@ import Styled from 'styled-components'
 const Home = ({ handleClick, menuOpen }) => {
   return (
     <Container id="Home" >
+      <button onClick={e => handleClick(e)}>
+        <i id='menuBtn' className="fas fa-bars"></i>
+      </button>
       <TitleContainer>
-        <button id='menuBtn' onClick={e => handleClick(e)}>Menu</button>
         <MainText >
           <h1>This is some text that will be displayed when you get to my portfolio.</h1>
         </MainText>
@@ -31,6 +33,24 @@ const Container = Styled.div`
   height: 100vh;
   /* background-color: #386C99; */
   /* background-color: #FFCA25; */
+
+  button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .3s ease;
+
+    &:hover {
+      color: #5BA077;
+      transition: .2s ease;
+    }
+  }
 `;
 const TitleContainer = Styled.div`
   /* background-color: #FFCA25; */
@@ -42,6 +62,7 @@ const TitleContainer = Styled.div`
   width: 80%;
   padding: none;
   margin: none;
+
 `;
 const MainText = Styled.div`
   display: flex;
