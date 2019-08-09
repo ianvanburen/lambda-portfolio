@@ -74,10 +74,12 @@ const LinkContainer = Styled.div`
   a {
     text-decoration: none;
     color: white;
+    transition: .2s ease;
 
     :hover {
       color: #FFCA25;
       transition: .2s ease;
+      transform: scale(1.1, 1.1);
       /* border: 2px solid red; */
     }
 

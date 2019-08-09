@@ -44,11 +44,12 @@ const Container = Styled.div`
     background: none;
     cursor: pointer;
     font-size: 2rem;
-    transition: .3s ease;
+    transition: .2s ease;
 
     &:hover {
-      color: #5BA077;
+      /* color: rgb(80, 80, 80); */
       transition: .2s ease;
+      transform: scaleX(1.3);
     }
   }
 `;
