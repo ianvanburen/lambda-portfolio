@@ -26,7 +26,7 @@ const MenuContainer = Styled.div`
   transform: translateX(-220px);
   transition: transform 300ms ease-in;
   /* background-color: rgba(40, 40, 40, .7); */
-  background-image: linear-gradient(90deg, rgb(30, 30, 30), rgba(20, 20, 20, .75));
+  background-image: linear-gradient(90deg, rgb(20, 20, 20), rgba(20, 20, 20, .75));
 
   &.open {
     transform: translateX(0);
@@ -42,8 +42,9 @@ const MenuItems = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   width: 80%;
+  padding: 1.5rem 0;
 
   a {
     text-decoration: none;

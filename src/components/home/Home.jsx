@@ -9,7 +9,7 @@ const Home = ({ handleClick, menuOpen }) => {
       </button>
       <TitleContainer>
         <MainText >
-          <h1>This is some text that will be displayed when you get to my portfolio.</h1>
+          <h1>Hi, I'm Laurence. Web development is my jam, but I also enjoy collecting records.</h1>
         </MainText>
         <LinkContainer>
           <div>
@@ -17,6 +17,7 @@ const Home = ({ handleClick, menuOpen }) => {
             <a href="#About">About</a>
             <a href="#Contact">Contact</a>
           </div>
+          <DownArrow href="#Work"><i className="far fa-arrow-alt-circle-down"></i></DownArrow>
           {/* <p>Click me to scroll down</p> */}
         </LinkContainer>
       </TitleContainer>
@@ -53,6 +54,7 @@ const Container = Styled.div`
     }
   }
 `;
+
 const TitleContainer = Styled.div`
   /* background-color: #FFCA25; */
   display: flex;
@@ -65,6 +67,7 @@ const TitleContainer = Styled.div`
   margin: none;
 
 `;
+
 const MainText = Styled.div`
   display: flex;
   align-items: center;
@@ -79,6 +82,7 @@ const MainText = Styled.div`
     color: #386C99;
   }
 `;
+
 const LinkContainer = Styled.div`
   display: flex;
   flex-direction: column;
@@ -108,8 +112,31 @@ const LinkContainer = Styled.div`
     }
   }
 
+
   p {
     color: #386C99;
+  }
+`;
+
+const DownArrow = Styled.a`
+  border: none;
+  text-decoration: none;
+  background: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  /* transition: .2s ease; */
+
+
+  i {
+    color: #386C99;
+    transition: .2s ease;
+
+    &:hover {
+      transition: .2s ease;
+      /* font-size: 2.5rem; */
+      transform: scale(1.2, 1.2);
+    }
   }
 `;
 
