@@ -11,7 +11,9 @@ const Project = props => {
           {
             backgroundImage: `url(${require(`../../../public/images/${props.image}.jpg`)})`
           }
-        }/>
+        }>
+          <ProjectInfo/>
+        </ProjectItem>
       </ProjectContainer>
     </>
   )
@@ -48,5 +50,21 @@ const ProjectItem = Styled.div`
     
   }
 `
+
+const ProjectInfo = Styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0);
+  transition: .2s ease;
+
+  &:hover {
+    transition: .2s ease;
+    background-color: rgba(40, 40, 40, .7);
+  }
+`;
 
 export default Project

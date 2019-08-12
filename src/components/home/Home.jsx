@@ -17,7 +17,7 @@ const Home = ({ handleClick, menuOpen }) => {
             <a href="#About">About</a>
             <a href="#Contact">Contact</a>
           </div>
-          <DownArrow href="#Work"><i className="far fa-arrow-alt-circle-down"></i></DownArrow>
+          <DownArrow href="#Work"><i class="fas fa-chevron-down"></i></DownArrow>
           {/* <p>Click me to scroll down</p> */}
         </LinkContainer>
       </TitleContainer>
@@ -87,9 +87,10 @@ const LinkContainer = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   /* border: 2px solid black; */
   width: 100%;
+  height: 100px;
 
   div {
     display: flex;
@@ -136,6 +137,7 @@ const DownArrow = Styled.a`
       transition: .2s ease;
       /* font-size: 2.5rem; */
       transform: scale(1.2, 1.2);
+      color: #80a1be;
     }
   }
 `;
