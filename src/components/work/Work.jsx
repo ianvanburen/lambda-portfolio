@@ -28,9 +28,20 @@ const WorkContainer = Styled.div`
   justify-content: flex-start;
   /* height: 100vh; */
   width: 100%;
+  height: 100%;
   /* padding: 1rem 0; */
   /* background-color: #FFCA25; */
 `
+
+// const ProjectInfo = Styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: red;
+// `;
 
 // const ExampleProject = Styled.div`
 //   display: flex;

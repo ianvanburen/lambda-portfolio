@@ -1,43 +1,63 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const Menu = ({ menuOpen }) => {
-  
+const Menu = ({ menuOpen, handleClick, ref }) => {
 
   return (
-    <MenuContainer className={menuOpen ? 'open' : 'closed'}>
-      <p>I'm a menu!</p>
+    <MenuContainer id='menu' className={menuOpen ? 'open' : 'closed'}>
+      <MenuItems>
+        <a href="#Home">Home</a>
+        <a href="#Work">Work</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+      </MenuItems>
     </MenuContainer>
   )
 }
 
-// const Navbar = ({ visible }) => (
-//   <div id="navbar" className={visible ? 'slideIn' : 'slideOut'}>
-//   </div>
-// )
-
 const MenuContainer = Styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
   position: fixed;
-  /* max-height: 100%; */
   height: 100vh;
   width: 220px;
   transform: translateX(-220px);
-  transition: transform 400ms ease-in;
-  background-color: rgba(40, 40, 40, .7);
+  transition: transform 300ms ease-in;
+  /* background-color: rgba(40, 40, 40, .7); */
+  background-image: linear-gradient(90deg, rgb(20, 20, 20), rgba(20, 20, 20, .75));
 
   &.open {
-    /* border: 2px solid cyan; */
     transform: translateX(0);
   }
 
   &.closed {
-    /* border: 2px solid teal; */
     transform: translateX(-220px);
+  }
+`
+
+const MenuItems = Styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid white; */
+  width: 80%;
+  padding: 1.5rem 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin: .5rem 0;
+    padding: 1rem 0;
+    transition: .2s ease;
+
+    &:hover {
+      transition: .2s ease;
+      transform: scale(1.3, 1.3);
+    }
   }
 `
 

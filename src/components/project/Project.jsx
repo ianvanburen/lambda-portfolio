@@ -11,7 +11,12 @@ const Project = props => {
           {
             backgroundImage: `url(${require(`../../../public/images/${props.image}.jpg`)})`
           }
-        }/>
+        }>
+          <ProjectInfo>
+            <h2>Name of Project</h2>
+            <p>Something to say about the project and how it was made. Adding a bunch more words to see what it looks like on multiple rows</p>
+          </ProjectInfo>
+        </ProjectItem>
       </ProjectContainer>
     </>
   )
@@ -48,5 +53,29 @@ const ProjectItem = Styled.div`
     
   }
 `
+
+const ProjectInfo = Styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0);
+  transition: .2s ease;
+  opacity: 0;
+
+  &:hover {
+    transition: .2s ease;
+    opacity: 1;
+    background-color: rgba(40, 40, 40, .7);
+  }
+
+  h2, p {
+    color: white;
+    padding: 0 10%;
+    text-align: center;
+  }
+`;
 
 export default Project
