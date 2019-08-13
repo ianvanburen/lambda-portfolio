@@ -9,18 +9,17 @@ const Home = ({ handleClick, menuOpen }) => {
       </button>
       <TitleContainer>
         <MainText >
-          <h1>Hi, I'm Laurence. Making web apps is my jam, but I also love to collect records.</h1>
+          <h1>Hi, I'm Laurence. Developing web apps is my jam, but I also love to collect records.</h1>
         </MainText>
-        <LinkContainer>
-          <div>
-            <a href="#Work">Projects</a>
-            <a href="#About">About</a>
-            <a href="#Contact">Contact</a>
-          </div>
-          <DownArrow href="#Work"><i class="fas fa-chevron-down"></i></DownArrow>
-          {/* <p>Click me to scroll down</p> */}
-        </LinkContainer>
       </TitleContainer>
+      <LinkContainer>
+        {/* <div>
+          <a href="#Work">Projects</a>
+          <a href="#About">About</a>
+          <a href="#Contact">Contact</a>
+        </div> */}
+        <DownArrow href="#Work"><i class="fas fa-chevron-down"></i></DownArrow>
+      </LinkContainer>
     </Container>
   )
 }
@@ -63,7 +62,7 @@ const TitleContainer = Styled.div`
   align-items: center;
   justify-content: space-between;
   height: 90%;
-  width: 80%;
+  width: 100%;
   padding: none;
   margin: none;
   /* border: 2px solid dodgerblue; */
@@ -73,14 +72,14 @@ const TitleContainer = Styled.div`
 const MainText = Styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   felx-direction: column;
   /* border: 2px solid black; */
-  width: 100%;
+  width: 70%;
   flex-grow: 1;
 
   h1 {
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     color: #386C99;
   }
 `;
@@ -92,7 +91,7 @@ const LinkContainer = Styled.div`
   justify-content: space-between;
   /* border: 2px solid black; */
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
 
   div {
     display: flex;
