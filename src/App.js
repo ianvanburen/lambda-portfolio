@@ -6,6 +6,7 @@ import Home from './components/home/Home'
 import Work from './components/work/Work'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
+import projectData from './projectData'
 
 class App extends Component {
   constructor(props){
@@ -14,7 +15,8 @@ class App extends Component {
 
   state = {
     menuOpen: false,
-    images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6']
+    images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6'],
+    projectData: projectData
   }
 
   componentDidMount = () => {

@@ -9,7 +9,7 @@ const Home = ({ handleClick, menuOpen }) => {
       </button>
       <TitleContainer>
         <MainText >
-          <h1>Hi, I'm Laurence. Web development is my jam, but I also enjoy collecting records.</h1>
+          <h1>Hi, I'm Laurence. Making web apps is my jam, but I also love to collect records.</h1>
         </MainText>
         <LinkContainer>
           <div>
@@ -34,6 +34,7 @@ const Container = Styled.div`
   height: 100vh;
   /* background-color: #386C99; */
   /* background-color: #FFCA25; */
+  background-color: #ffce38;
 
   button {
     position: fixed;
@@ -61,10 +62,11 @@ const TitleContainer = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80%;
+  height: 90%;
   width: 80%;
   padding: none;
   margin: none;
+  /* border: 2px solid dodgerblue; */
 
 `;
 
@@ -87,7 +89,7 @@ const LinkContainer = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* border: 2px solid black; */
   width: 100%;
   height: 100px;
@@ -125,9 +127,7 @@ const DownArrow = Styled.a`
   background: none;
   font-size: 2.2rem;
   cursor: pointer;
-  margin-top: 20px;
-  /* transition: .2s ease; */
-
+  /* margin-top: 20px; */
 
   i {
     color: #386C99;
@@ -135,7 +135,6 @@ const DownArrow = Styled.a`
 
     &:hover {
       transition: .2s ease;
-      /* font-size: 2.5rem; */
       transform: scale(1.2, 1.2);
       color: #80a1be;
     }

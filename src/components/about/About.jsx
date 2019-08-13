@@ -9,7 +9,7 @@ const About = () => {
         <img src="https://media.licdn.com/dms/image/C4E03AQE8TXApk7qYMw/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=KszW7r7LR10hiYzLMkg38dDlS66bzZYaQ0LJW88xPrg" alt="That's Me!"/>
       </ImageContainer>
       <p>I'm a Full Stack Web Developer with a passion for tech and coding ideas to life. Through 2+ years of programming I’ve built several web apps and earned my Front-End Web Development Certificate from freeCodeCamp. I'm now enrolled in Lambda School's Full Stack Web program where I'm building upon my technical foundation, developing new skills and continuing to design applications using the industry's latest technologies.</p>
-      <p>Paired with my passion for learning are my strong communication skills that have helped me to succeed in previous sales & marketing roles. When I’m not mashing computer keys, I enjoy live music, rock climbing, travel and the company of good friends. My ambition is to become a better software engineer each day by way of personal projects, staying current with industry trends, collaborating with others and pursuing new technical interests.</p>
+      <p>Paired with my passion for learning are strong communication skills which have helped me to succeed in previous sales & marketing roles. When I’m not mashing computer keys, I enjoy live music, rock climbing, travel and the company of good friends. My ambition is to become a better software engineer each day by way of personal projects, staying current with industry trends, collaborating with others and pursuing new technical interests. Feel free to <a href="https://resume.creddle.io/resume/e1fgpovxad8" target="_blank" rel="noopener noreferrer">check out my resumé</a> to learn more about my skills and experience!</p>
     </AboutContainer>
   )
 }
@@ -28,6 +28,20 @@ const AboutContainer = Styled.div`
   h2, p {
     color: white;
   }
+
+  a {
+    /* text-decoration: none; */
+    color: white;
+    /* color: black; */
+    font-weight: 700;
+    transition: .1s ease;
+
+    &:hover {
+      transition: .1s ease;
+      text-decoration: none;
+    }
+  }
+
 `
 const ImageContainer = Styled.div`
   display: flex;

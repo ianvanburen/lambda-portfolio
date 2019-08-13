@@ -1,23 +1,28 @@
 General:
 [] Create global styled components/containers to use across project
-[] Add slideout/drawer menu for mobile view
+[x] Add slideout/drawer menu for mobile view
 [] Add breakpoints for tablet, desktop
 [] Add Meyers CSS reset
 [] Add top menu that appears when mobile user starts scrolling down
-[] Add a canvas animation effect on home screen?
  
 App.js:
 [] Import images from separate file, map over images and set them on Work component state
 
 About.jsx:
+[] Update bio: Now completed Lambda's Full-Stack Web curriculum
+[] Add link to view resumé
 
 Contact.jsx:
+[] Add text about getting into contact with me
 
 Home.jsx:
+[] Add a canvas animation effect on home screen?
+[] Animate Home text & cycle through interests (eg. Climbing, Hiking, Travel, Design, etc..)
 
 Project.jsx:
-[x] Remove margin/padding from Project component (Mobile)
-[] Adjust margins/padding for Project component (Desktop, Tablet)
+[x] Remove margin/padding from Project component (Mobile/Tablet)
+[] Adjust margins/padding for Project component (Desktop)
+[] Automatically display project Name & Info on mobile & tablet views, only display info on :hover for desktop view
 
 Work.jsx:
 [] Replace placeholders with Images/links to actual projects on github
