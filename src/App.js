@@ -16,13 +16,23 @@ class App extends Component {
   state = {
     menuOpen: false,
     images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6'],
-    projectData: projectData
+    projectData: projectData,
+    interests: ['to collect records', 'photography and design', 'being a slave to my cat', 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music', 'a beer with good friends'],
+    index: 0
   }
-
+  
   componentDidMount = () => {
     // TODO: Import images from separate file, map over images and set them on Work component state
-    console.log('IMAGES: ', this.state.images);
+    // console.log('IMAGES: ', this.state.images);
+
+    this.interval = setInterval(() => {
+      this.state.index === this.state.interests.length - 1
+        ? this.setState({ index: 0 })
+        : this.setState({ index: this.state.index + 1 })
+    }, 3000)
+    clearInterval(this.timeout)
   }
+
   
   handleClick = e => {
     // console.log('E.TARGET: ', e.target)
@@ -46,7 +56,8 @@ class App extends Component {
         />
         <Home 
           handleClick={e => this.handleClick(e)} 
-          menuOpen={this.state.menuOpen}
+          interest={this.state.interests[this.state.index]}
+          index={this.state.index}
           />
         <Work 
           images={this.state.images} 

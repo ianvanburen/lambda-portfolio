@@ -9,11 +9,12 @@ App.js:
 [] Import images from separate file, map over images and set them on Work component state
 
 About.jsx:
+[] Pick out different headshot?
 [] Update bio: Now completed Lambda's Full-Stack Web curriculum
-[] Add link to view resumé
+[x] Add link to view resumé
 
 Contact.jsx:
-[] Add text about getting into contact with me
+[x] Add text about getting into contact with me
 
 Home.jsx:
 [] Add a canvas animation effect on home screen?
