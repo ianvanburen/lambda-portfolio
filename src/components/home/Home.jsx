@@ -1,7 +1,8 @@
 import React from 'react'
 import Styled from 'styled-components'
+// import {Transition, animated} from 'react-spring/renderprops'
 
-const Home = ({ handleClick, menuOpen }) => {
+const Home = ({ handleClick, interest, index }) => {
   return (
     <Container id="Home" >
       <button onClick={e => handleClick(e)}>
@@ -9,16 +10,12 @@ const Home = ({ handleClick, menuOpen }) => {
       </button>
       <TitleContainer>
         <MainText >
-          <h1>Hi, I'm Laurence. Developing web apps is my jam, but I also love to collect records.</h1>
+          <h1>Hi, I'm Laurence.</h1>
+          <h1>{`Developing web apps is my jam, but I also love ${interest}.`}</h1>
         </MainText>
       </TitleContainer>
       <LinkContainer>
-        {/* <div>
-          <a href="#Work">Projects</a>
-          <a href="#About">About</a>
-          <a href="#Contact">Contact</a>
-        </div> */}
-        <DownArrow href="#Work"><i class="fas fa-chevron-down"></i></DownArrow>
+        <DownArrow href="#Work"><i className="fas fa-chevron-down"></i></DownArrow>
       </LinkContainer>
     </Container>
   )
@@ -31,14 +28,13 @@ const Container = Styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* background-color: #386C99; */
-  /* background-color: #FFCA25; */
   background-color: #ffce38;
 
   button {
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
+    z-index: 3;
     border: none;
     margin: 0;
     padding: 0;
@@ -46,9 +42,9 @@ const Container = Styled.div`
     cursor: pointer;
     font-size: 2rem;
     transition: .2s ease;
+    color: white;
 
     &:hover {
-      /* color: rgb(80, 80, 80); */
       transition: .2s ease;
       transform: scaleX(1.3);
     }
@@ -56,7 +52,6 @@ const Container = Styled.div`
 `;
 
 const TitleContainer = Styled.div`
-  /* background-color: #FFCA25; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,22 +60,25 @@ const TitleContainer = Styled.div`
   width: 100%;
   padding: none;
   margin: none;
-  /* border: 2px solid dodgerblue; */
-
 `;
 
 const MainText = Styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  felx-direction: column;
-  /* border: 2px solid black; */
+  flex-direction: column;
   width: 70%;
-  flex-grow: 1;
+  padding-top: 35vh;
+  /* flex-grow: 1; */
+
+  h1:first-child {
+    color: rgb(60, 60, 60);
+  }
 
   h1 {
-    margin: 2rem 0;
-    color: #386C99;
+    margin: 0;
+    color: white;
+    transition: .3s ease;
   }
 `;
 
@@ -89,35 +87,7 @@ const LinkContainer = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid black; */
   width: 100%;
-  /* height: 100px; */
-
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-
-    a {
-      text-decoration: none;
-      color: white;
-      border-bottom: 2px solid rgba(255, 255, 255, 0);
-      color: #386C99;
-      transition: .2s;
-      font-weight: 700;
-
-      &:hover {
-        transiton: .1s;
-        border-bottom: 2px solid #386C99;
-      }
-    }
-  }
-
-
-  p {
-    color: #386C99;
-  }
 `;
 
 const DownArrow = Styled.a`
@@ -126,16 +96,15 @@ const DownArrow = Styled.a`
   background: none;
   font-size: 2.2rem;
   cursor: pointer;
-  /* margin-top: 20px; */
+  padding: 0 0 2rem 0;
 
   i {
-    color: #386C99;
+    color: white;
     transition: .2s ease;
 
     &:hover {
       transition: .2s ease;
       transform: scale(1.2, 1.2);
-      color: #80a1be;
     }
   }
 `;

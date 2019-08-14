@@ -5,8 +5,6 @@ const Project = props => {
   return (
     <>
       <ProjectContainer > 
-        {/* <ProjectItem src={`../../images/${props.image}.jpg`} alt={props.image}/> */}
-        {/* <ProjectItem src={`public/images/img1.jpg`} alt={props.image}/> */}
         <ProjectItem style={
           {
             backgroundImage: `url(${require(`../../../public/images/${props.image}.jpg`)})`

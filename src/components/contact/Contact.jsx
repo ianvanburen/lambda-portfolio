@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components'
 
-
 const Contact = () => {
   return (
     <Wrapper>
@@ -93,7 +92,6 @@ const LinkContainer = Styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 2px solid white; */
   width: 70%;
   padding: 1rem 0;
   margin: 1rem 0;
