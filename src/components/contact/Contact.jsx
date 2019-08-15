@@ -11,6 +11,7 @@ const Contact = () => {
         </TextContainer>
         <LinkContainer>
           <a 
+            id="linkedin"
             href="https://www.linkedin.com/in/laurence-van-buren/" 
             target="_blank"
             rel="noopener noreferrer"
@@ -18,6 +19,7 @@ const Contact = () => {
             <i className="fab fa-linkedin"></i>
           </a>
           <a 
+            id="github"
             href="https://github.com/IVB107" 
             target="_blank"
             rel="noopener noreferrer"
@@ -25,6 +27,7 @@ const Contact = () => {
             <i className="fab fa-github"></i> 
           </a>
           <a 
+            id="mail"
             href="mailto:laurence.vanburen@gmail.com" 
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +50,9 @@ const Wrapper = Styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #386C99;
+  /* background-color: #272B4D; */
+  /* background-image: linear-gradient(#566aa3, #203766); */
+  background-image: linear-gradient(#566aa3, #1d3360);
   height: 100vh;
 `
 
@@ -102,7 +107,7 @@ const LinkContainer = Styled.div`
     transition: .2s ease;
 
     :hover {
-      color: #FFCA25;
+      /* color: #FFCA25; */
       transition: .2s ease;
       transform: scale(1.1, 1.1);
     }
@@ -111,6 +116,16 @@ const LinkContainer = Styled.div`
     font-size: 4rem;
     transition: .2s ease;
     }
+  }
+
+  #linkedin:hover {
+    color: #0077B5;
+  }
+  #github:hover {
+    color: #45246F;
+  }
+  #mail:hover {
+    color: #D85044;
   }
 `
 

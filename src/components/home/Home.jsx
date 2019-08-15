@@ -4,7 +4,7 @@ import {Transition, animated} from 'react-spring/renderprops'
 
 class Home extends Component {
   state = {
-    interests: ['collecting records', 'photography and design', 'being a slave to my cat', 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music'],
+    interests: ['collecting records', 'photography and design', 'serving my almighty cat', 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music'],
     index: 0
   }
 
@@ -52,9 +52,16 @@ const Container = Styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #ffce38;
+  max-height: 100vh;
+  /* height: 100%; */
+  background-image: linear-gradient(#55f9a6, #8bbbf9);
+
+  @media (min-width: 500px) {
+    background-image: linear-gradient(#0569d6, #55f9a6);
+  }
 
   button {
+    
     position: fixed;
     top: 1rem;
     left: 1rem;
@@ -91,8 +98,9 @@ const MainText = Styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 70%;
+  max-width: 70%;
   padding-top: 35vh;
+  /* border: 2px solid white; */
   /* flex-grow: 1; */
 
   h1:first-child {
@@ -136,7 +144,7 @@ const DownArrow = Styled.a`
 
     &:hover {
       transition: .2s ease;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.4, 1.4);
     }
   }
 `;

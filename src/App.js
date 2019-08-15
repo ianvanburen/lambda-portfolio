@@ -23,7 +23,6 @@ class App extends Component {
     // TODO: Import images from separate file, map over images and set them on Work component state
   }
 
-  
   handleClick = e => {
     // console.log('E.TARGET: ', e.target)
     if (e.target.id !== 'menuBtn' && !this.state.menuOpen){
@@ -34,7 +33,6 @@ class App extends Component {
     }
     this.setState({ menuOpen: !this.state.menuOpen })
   }
-
 
   render() {
     return (
