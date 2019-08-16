@@ -24,11 +24,30 @@ const WorkContainer = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* height: 100vh; */
   width: 100%;
   height: 100%;
-  /* padding: 1rem 0; */
-  /* background-color: #FFCA25; */
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    min-height: 100vh;
+
+    div.project {
+      width: 26%;
+      max-width: 300px;
+      transition: .2s ease;
+      box-shadow: 0px 0px 20px rgb(80, 80, 80);
+      margin: 1rem;
+
+      :hover {
+        transition: .2s ease;
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
 `
 
 export default Work
