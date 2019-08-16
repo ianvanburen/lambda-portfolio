@@ -23,8 +23,7 @@ const AboutContainer = Styled.div`
   justify-content: flex-start;
   align-items: center;
   /* background-color: #5BA077; */
-  background-image: linear-gradient(#8bbbf9, #566aa3);
-  /* background-image: linear-gradient(#8bbbf9, #5690ad); */
+  background-image: linear-gradient(#55f9a6, #2d9e6f);
   padding: 3rem 0;
   /* margin: 1rem 0; */
 `

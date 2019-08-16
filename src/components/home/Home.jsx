@@ -54,11 +54,16 @@ const Container = Styled.div`
   height: 100vh;
   max-height: 100vh;
   /* height: 100%; */
-  background-image: linear-gradient(#55f9a6, #8bbbf9);
+  /* background-image: linear-gradient(#55f9a6, #8bbbf9); */
+  background-image: linear-gradient(#0569d6, #55f9a6);
 
-  @media (min-width: 500px) {
+  /* @media (min-width: 500px) {
     background-image: linear-gradient(#0569d6, #55f9a6);
-  }
+  } */
+
+  /* @media (min-width: 800px) {
+    background-image: linear-gradient(cyan, magenta);
+  } */
 
   button {
     

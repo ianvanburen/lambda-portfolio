@@ -52,7 +52,7 @@ const Wrapper = Styled.div`
   align-items: center;
   /* background-color: #272B4D; */
   /* background-image: linear-gradient(#566aa3, #203766); */
-  background-image: linear-gradient(#566aa3, #1d3360);
+  background-image: linear-gradient(#2d9e6f, #0e3f2f);
   height: 100vh;
 `
 

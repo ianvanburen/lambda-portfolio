@@ -1,7 +1,7 @@
 General:
 [] Create reusable styled-components – learn to use styled-component mixins!!
 [x] Add slideout/drawer menu for mobile view
-[] Add breakpoints for tablet, desktop
+[] Add breakpoints for tablet (500px), desktop (800px)
 [] Add Meyers CSS reset
 [] Add top menu that appears when mobile user starts scrolling down
  
