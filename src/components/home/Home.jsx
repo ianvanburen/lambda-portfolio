@@ -53,6 +53,7 @@ const Container = Styled.div`
   justify-content: center;
   height: 100vh;
   max-height: 100vh;
+  width: 100%;
   /* height: 100%; */
   /* background-image: linear-gradient(#55f9a6, #8bbbf9); */
   background-image: linear-gradient(#0569d6, #55f9a6);

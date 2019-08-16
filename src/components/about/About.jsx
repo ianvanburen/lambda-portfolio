@@ -35,7 +35,15 @@ const TextContainer = Styled.div`
   align-items: flex-start;
   /* border: 2px solid white; */
   color: white;
-  width: 70%;
+  max-width: 70%;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
+
+  p {
+    text-indent: 2rem;
+  }
 
   a {
     /* text-decoration: none; */

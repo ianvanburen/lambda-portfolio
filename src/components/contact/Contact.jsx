@@ -91,6 +91,10 @@ const TextContainer = Styled.div`
   text-align: center;
   width: 70%;
   /* padding: 0 1rem; */
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
 `
 
 const LinkContainer = Styled.div`
@@ -100,6 +104,10 @@ const LinkContainer = Styled.div`
   width: 70%;
   padding: 1rem 0;
   margin: 1rem 0;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
 
   a {
     text-decoration: none;
