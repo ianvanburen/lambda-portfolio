@@ -4,7 +4,7 @@ import {Transition, animated} from 'react-spring/renderprops'
 
 class Home extends Component {
   state = {
-    interests: ['collecting records', 'photography and design', 'serving my almighty cat', 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music'],
+    interests: ['collecting records', 'photography and design', "following my cat's orders", 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music', 'travel & adventure', 'time with friends and family'],
     index: 0
   }
 
@@ -120,7 +120,9 @@ const MainText = Styled.div`
 
   div {
     color: white;
+
     h1 {
+      max-width: 70%;
       color: white !important;
       position: absolute;
     }

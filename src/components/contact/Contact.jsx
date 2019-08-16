@@ -6,8 +6,8 @@ const Contact = () => {
     <Wrapper>
       <ContactContainer id="Contact" >
         <TextContainer>
-          <h1>Give me a shout!</h1>
-          <p>Thanks for stopping by! If you think I might be someone you'd like to work with, I'd love to hear from you. I promise to get back to you as soon I can.</p>
+          <h1>Let's Chat</h1>
+          <p>Since you made it this far, might as well drop me a line! Whether you'd like me on your team or just want to say 'hi', I'd love to hear from you. I'll respond as soon as I can!</p>
         </TextContainer>
         <LinkContainer>
           <a 

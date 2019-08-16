@@ -58,8 +58,6 @@ class App extends Component {
 
 const AppContainer = Styled.div`
   background-image: URL("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYYstaCQKnjRMfYX8ulF4bqNrNIxgHplKoT4oawrkLQWrfFl_xLA");
-  /* background-size: 100% 100%; */
-  /* background-size: cover; */
   background-repeat: repeat;
   background-attachment: fixed;
 `

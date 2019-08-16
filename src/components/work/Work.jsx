@@ -39,12 +39,13 @@ const WorkContainer = Styled.div`
       width: 26%;
       max-width: 300px;
       transition: .2s ease;
-      box-shadow: 0px 0px 20px rgb(80, 80, 80);
+      box-shadow: 0px 0px 20px 2px rgb(40, 40, 40);
       margin: 1rem;
 
       :hover {
         transition: .2s ease;
         transform: scale(1.1, 1.1);
+        box-shadow: 0px 0px 22px 4px rgb(40, 40, 40);
       }
     }
   }
