@@ -1,5 +1,5 @@
 General:
-[] Create global styled components/containers to use across project
+[] Create reusable styled-components – learn to use styled-component mixins!!
 [x] Add slideout/drawer menu for mobile view
 [] Add breakpoints for tablet, desktop
 [] Add Meyers CSS reset
@@ -19,6 +19,9 @@ Contact.jsx:
 Home.jsx:
 [] Add a canvas animation effect on home screen?
 [] Animate Home text & cycle through interests (eg. Climbing, Hiking, Travel, Design, etc..)
+
+Menu.jsx:
+[] Implement react-spring animation for menu links (see doc examples)
 
 Project.jsx:
 [x] Remove margin/padding from Project component (Mobile/Tablet)
