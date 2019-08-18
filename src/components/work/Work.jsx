@@ -3,7 +3,6 @@ import Styled from 'styled-components'
 
 import Project from '../project/Project'
 
-
 const Work = props => {
   return (
     <WorkContainer id="Work" > 
@@ -16,7 +15,6 @@ const Work = props => {
     </WorkContainer>
   )
 }
-
 
 // TODO: Create global components container to use across sections
 const WorkContainer = Styled.div`

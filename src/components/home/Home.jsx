@@ -54,9 +54,8 @@ const Container = Styled.div`
   height: 100vh;
   max-height: 100vh;
   width: 100%;
-  /* height: 100%; */
-  /* background-image: linear-gradient(#55f9a6, #8bbbf9); */
   background-image: linear-gradient(#0569d6, #55f9a6);
+  box-shadow: 0px 0px 20px rgb(40, 40, 40);
 
   /* @media (min-width: 500px) {
     background-image: linear-gradient(#0569d6, #55f9a6);
@@ -106,8 +105,6 @@ const MainText = Styled.div`
   flex-direction: column;
   max-width: 70%;
   padding-top: 35vh;
-  /* border: 2px solid white; */
-  /* flex-grow: 1; */
 
   h1:first-child {
     color: rgb(60, 60, 60);
