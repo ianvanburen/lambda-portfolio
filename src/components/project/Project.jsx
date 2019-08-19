@@ -70,13 +70,24 @@ const ProjectInfo = Styled.div`
   &:hover {
     transition: .2s ease;
     opacity: 1;
-    background-color: rgba(40, 40, 40, .7);
+    background-color: rgba(40, 40, 40, .6);
   }
 
   h2, p {
     color: white;
     padding: 0 10%;
     text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    opacity: 1;
+    background-color: rgba(40, 40, 40, .6);
+    /* background-size: auto 120%;
+
+    :hover {
+      background-size: auto 130%;
+      transition: .2s ease;
+    } */
   }
 `;
 
