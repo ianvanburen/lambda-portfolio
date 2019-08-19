@@ -1,0 +1,34 @@
+General:
+[] Create reusable styled-components – learn to use styled-component mixins!!
+[x] Add slideout/drawer menu for mobile view
+[x] Add breakpoints for tablet (500px), desktop (800px)
+[] Add Meyers CSS reset
+[] Add top menu that appears when mobile user starts scrolling down
+[] Replace React favicon with a custom icon
+[] Add page title for browser tab
+[x] Get project hosted on custom domain (www.laurencevanburen.com)
+ 
+App.js:
+[] Import images from separate file, map over images and set them on Work component state
+
+About.jsx:
+[x] Pick out different headshot?
+[] Update bio: Now completed Lambda's Full-Stack Web curriculum
+[x] Add link to view resumé
+
+Contact.jsx:
+[x] Add text about getting into contact with me
+
+Home.jsx:
+[] Add a canvas animation effect on home screen?
+[x] Animate Home text & cycle through interests (eg. Climbing, Hiking, Travel, Design, etc..)
+
+Menu.jsx:
+
+Project.jsx:
+[x] Remove margin/padding from Project component (Mobile/Tablet)
+[x] Adjust margins/padding for Project component (Desktop)
+[] Automatically display project Name & Info on mobile & tablet views, only display info on :hover for desktop view
+
+Work.jsx:
+[] Replace placeholders with Images/links to actual projects on github
