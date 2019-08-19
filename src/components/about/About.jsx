@@ -22,10 +22,9 @@ const AboutContainer = Styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: #5BA077; */
-  background-image: linear-gradient(#8bbbf9, #566aa3);
-  /* background-image: linear-gradient(#8bbbf9, #5690ad); */
+  background-image: linear-gradient(#55f9a6, #2d9e6f);
   padding: 3rem 0;
+  box-shadow: 0px 0px 20px rgb(40, 40, 40);
   /* margin: 1rem 0; */
 `
 
@@ -36,10 +35,17 @@ const TextContainer = Styled.div`
   align-items: flex-start;
   /* border: 2px solid white; */
   color: white;
-  width: 70%;
+  max-width: 70%;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
+
+  p {
+    text-indent: 2rem;
+  }
 
   a {
-    /* text-decoration: none; */
     color: white;
     font-weight: 700;
     transition: .1s ease;

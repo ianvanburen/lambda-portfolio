@@ -4,7 +4,7 @@ import Styled from 'styled-components'
 const Project = props => {
   return (
     <>
-      <ProjectContainer > 
+      <ProjectContainer className="project"> 
         <ProjectItem style={
           {
             backgroundImage: `url(${require(`../../../public/images/${props.image}.jpg`)})`
@@ -21,16 +21,12 @@ const Project = props => {
 
 }
 
-// TODO: Create global components container to use across sections
 const ProjectContainer = Styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* margin: 0; */
-  /* padding: none; */
-  /* border: 3px solid red; */
 `
 
 const ProjectItem = Styled.div`
@@ -44,11 +40,19 @@ const ProjectItem = Styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   transition: .2s ease;
-
+  
   :hover {
     background-size: 120%;
     transition: .2s ease;
-    
+  }
+
+  @media (min-width: 800px) {
+    background-size: auto 120%;
+
+    :hover {
+      background-size: auto 130%;
+      transition: .2s ease;
+    }
   }
 `
 
@@ -66,13 +70,24 @@ const ProjectInfo = Styled.div`
   &:hover {
     transition: .2s ease;
     opacity: 1;
-    background-color: rgba(40, 40, 40, .7);
+    background-color: rgba(40, 40, 40, .6);
   }
 
   h2, p {
     color: white;
     padding: 0 10%;
     text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    opacity: 1;
+    background-color: rgba(40, 40, 40, .6);
+    /* background-size: auto 120%;
+
+    :hover {
+      background-size: auto 130%;
+      transition: .2s ease;
+    } */
   }
 `;
 

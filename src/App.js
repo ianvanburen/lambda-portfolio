@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Styled from 'styled-components'
 
 // import './index.css'
 import Menu from './components/menu/Menu'
@@ -36,7 +37,7 @@ class App extends Component {
 
   render() {
     return (
-      <div id='app' onClick={e => this.handleClick(e)}>
+      <AppContainer id='app' onClick={e => this.handleClick(e)}>
         <Menu
           id="menu"
           menuOpen={this.state.menuOpen}
@@ -50,9 +51,15 @@ class App extends Component {
         />
         <About />
         <Contact />
-      </div>
+      </AppContainer>
     );
   }
 }
+
+const AppContainer = Styled.div`
+  background-image: URL("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYYstaCQKnjRMfYX8ulF4bqNrNIxgHplKoT4oawrkLQWrfFl_xLA");
+  background-repeat: repeat;
+  background-attachment: fixed;
+`
 
 export default App;

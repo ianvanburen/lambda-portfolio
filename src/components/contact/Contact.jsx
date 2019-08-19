@@ -6,8 +6,8 @@ const Contact = () => {
     <Wrapper>
       <ContactContainer id="Contact" >
         <TextContainer>
-          <h1>Give me a shout!</h1>
-          <p>Thanks for stopping by! If you think I might be someone you'd like to work with, I'd love to hear from you. I promise to get back to you as soon I can.</p>
+          <h1>Let's Chat</h1>
+          <p>Since you made it this far, might as well drop me a line! Whether you'd like me on your team or just want to say 'hi', I'd love to hear from you. I'll respond as soon as I can!</p>
         </TextContainer>
         <LinkContainer>
           <a 
@@ -52,7 +52,7 @@ const Wrapper = Styled.div`
   align-items: center;
   /* background-color: #272B4D; */
   /* background-image: linear-gradient(#566aa3, #203766); */
-  background-image: linear-gradient(#566aa3, #1d3360);
+  background-image: linear-gradient(#2d9e6f, #0e3f2f);
   height: 100vh;
 `
 
@@ -91,6 +91,10 @@ const TextContainer = Styled.div`
   text-align: center;
   width: 70%;
   /* padding: 0 1rem; */
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
 `
 
 const LinkContainer = Styled.div`
@@ -100,6 +104,10 @@ const LinkContainer = Styled.div`
   width: 70%;
   padding: 1rem 0;
   margin: 1rem 0;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
 
   a {
     text-decoration: none;

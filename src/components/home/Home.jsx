@@ -4,7 +4,7 @@ import {Transition, animated} from 'react-spring/renderprops'
 
 class Home extends Component {
   state = {
-    interests: ['collecting records', 'photography and design', 'serving my almighty cat', 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music'],
+    interests: ['collecting records', 'photography and design', "following my cat's orders", 'rock climbing', 'learning new skills', 'camping & backpacking', 'a perfectly ripe avocado', 'live music', 'travel & adventure', 'time with friends and family'],
     index: 0
   }
 
@@ -53,12 +53,17 @@ const Container = Styled.div`
   justify-content: center;
   height: 100vh;
   max-height: 100vh;
-  /* height: 100%; */
-  background-image: linear-gradient(#55f9a6, #8bbbf9);
+  width: 100%;
+  background-image: linear-gradient(#0569d6, #55f9a6);
+  box-shadow: 0px 0px 20px rgb(40, 40, 40);
 
-  @media (min-width: 500px) {
+  /* @media (min-width: 500px) {
     background-image: linear-gradient(#0569d6, #55f9a6);
-  }
+  } */
+
+  /* @media (min-width: 800px) {
+    background-image: linear-gradient(cyan, magenta);
+  } */
 
   button {
     
@@ -100,8 +105,6 @@ const MainText = Styled.div`
   flex-direction: column;
   max-width: 70%;
   padding-top: 35vh;
-  /* border: 2px solid white; */
-  /* flex-grow: 1; */
 
   h1:first-child {
     color: rgb(60, 60, 60);
@@ -115,7 +118,9 @@ const MainText = Styled.div`
 
   div {
     color: white;
+
     h1 {
+      max-width: 70%;
       color: white !important;
       position: absolute;
     }
