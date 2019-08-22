@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
 
-// import './index.css'
+import './index.css'
 import Menu from './components/menu/Menu'
 import Home from './components/home/Home'
 import Work from './components/work/Work'
@@ -10,18 +10,10 @@ import Contact from './components/contact/Contact'
 import projectData from './projectData'
 
 class App extends Component {
-  constructor(props){
-    super()
-  }
 
   state = {
     menuOpen: false,
-    images: ['img1', 'img2', 'img3', 'img4', 'img5', 'img6'],
     projectData: projectData
-  }
-  
-  componentDidMount = () => {
-    // TODO: Import images from separate file, map over images and set them on Work component state
   }
 
   handleClick = e => {
@@ -48,6 +40,7 @@ class App extends Component {
           />
         <Work 
           images={this.state.images} 
+          projects={this.state.projectData}
         />
         <About />
         <Contact />

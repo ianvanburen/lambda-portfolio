@@ -5,7 +5,7 @@ General:
 [] Add Meyers CSS reset
 [] Add top menu that appears when mobile user starts scrolling down
 [] Replace React favicon with a custom icon
-[] Add page title for browser tab
+[x] Add page title for browser tab
 [x] Get project hosted on custom domain (www.laurencevanburen.com)
  
 App.js:
@@ -28,7 +28,8 @@ Menu.jsx:
 Project.jsx:
 [x] Remove margin/padding from Project component (Mobile/Tablet)
 [x] Adjust margins/padding for Project component (Desktop)
-[] Automatically display project Name & Info on mobile & tablet views, only display info on :hover for desktop view
+[x] Automatically display project Name & Info on mobile & tablet views, only display info on :hover for desktop view
+[] IMPORTANT - Remove :hover styles for mobile/tablet views
 
 Work.jsx:
 [] Replace placeholders with Images/links to actual projects on github
