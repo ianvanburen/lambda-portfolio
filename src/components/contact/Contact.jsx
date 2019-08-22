@@ -50,6 +50,7 @@ const Wrapper = Styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   /* background-color: #272B4D; */
   /* background-image: linear-gradient(#566aa3, #203766); */
   background-image: linear-gradient(#2d9e6f, #0e3f2f);
