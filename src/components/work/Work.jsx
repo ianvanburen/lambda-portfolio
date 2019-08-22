@@ -26,6 +26,7 @@ const WorkContainer = Styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  /* max-width: 1300px; */
   height: 100%;
   border-top: 1px solid rgb(40, 40, 40);
   border-bottom: 1px solid rgb(40, 40, 40);
@@ -40,11 +41,11 @@ const WorkContainer = Styled.div`
     border: none;
 
     div.project {
-      width: 26%;
+      /* width: 26%; */
       max-width: 300px;
       transition: .2s ease;
       box-shadow: 0px 0px 20px 2px rgb(40, 40, 40);
-      margin: 1rem;
+      margin: 0 2rem;
 
       :hover {
         transition: .2s ease;

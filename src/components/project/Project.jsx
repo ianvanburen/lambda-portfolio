@@ -4,7 +4,7 @@ import Styled from 'styled-components'
 const Project = ({ title, description, imageUrl, codeUrl }) => {
   return (
     <>
-      <ProjectContainer className="project" href={codeUrl}> 
+      <ProjectContainer className="project"> 
         <ProjectItem 
           href={codeUrl} 
           target="_blank"
@@ -26,10 +26,12 @@ const ProjectContainer = Styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 280px;
   border-top: 1px solid rgb(40, 40, 40);
   border-bottom: 1px solid rgb(40, 40, 40);
 
   @media (min-width: 800px) {
+    margin: none;
     border: none;
   }
 `

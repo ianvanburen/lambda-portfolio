@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
 
-import './index.css'
+// import './index.css'
 import Menu from './components/menu/Menu'
 import Home from './components/home/Home'
 import Work from './components/work/Work'
