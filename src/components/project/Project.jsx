@@ -1,24 +1,23 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const Project = props => {
+const Project = ({ title, description, imageUrl, codeUrl }) => {
   return (
     <>
-      <ProjectContainer className="project"> 
-        <ProjectItem style={
-          {
-            backgroundImage: `url(${require(`../../../public/images/${props.image}.jpg`)})`
-          }
-        }>
+      <ProjectContainer className="project" href={codeUrl}> 
+        <ProjectItem 
+          href={codeUrl} 
+          target="_blank"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        >
           <ProjectInfo>
-            <h2>Name of Project</h2>
-            <p>Something to say about the project and how it was made. Adding a bunch more words to see what it looks like on multiple rows</p>
+            <h2>{title}</h2>
+            <p>{description}</p>
           </ProjectInfo>
         </ProjectItem>
       </ProjectContainer>
     </>
   )
-
 }
 
 const ProjectContainer = Styled.div`
@@ -27,9 +26,16 @@ const ProjectContainer = Styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-top: 1px solid rgb(40, 40, 40);
+  border-bottom: 1px solid rgb(40, 40, 40);
+
+  @media (min-width: 800px) {
+    border: none;
+  }
 `
 
-const ProjectItem = Styled.div`
+const ProjectItem = Styled.a`
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,11 +46,6 @@ const ProjectItem = Styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   transition: .2s ease;
-  
-  :hover {
-    background-size: 120%;
-    transition: .2s ease;
-  }
 
   @media (min-width: 800px) {
     background-size: auto 120%;
@@ -70,24 +71,18 @@ const ProjectInfo = Styled.div`
   &:hover {
     transition: .2s ease;
     opacity: 1;
-    background-color: rgba(40, 40, 40, .6);
+    background-color: rgba(40, 40, 40, .8);
   }
 
   h2, p {
     color: white;
-    padding: 0 10%;
+    padding: 0 10px;
     text-align: center;
   }
 
   @media (max-width: 800px) {
     opacity: 1;
-    background-color: rgba(40, 40, 40, .6);
-    /* background-size: auto 120%;
-
-    :hover {
-      background-size: auto 130%;
-      transition: .2s ease;
-    } */
+    background-color: rgba(40, 40, 40, .8);
   }
 `;
 

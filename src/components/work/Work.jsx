@@ -3,13 +3,16 @@ import Styled from 'styled-components'
 
 import Project from '../project/Project'
 
-const Work = props => {
+const Work = ({ projects }) => {
   return (
     <WorkContainer id="Work" > 
-      {props.images.map(image => (
+      {projects.map(project => (
         <Project 
-          image={image} 
-          key={image}
+          title={project.title}
+          description={project.description}
+          imageUrl={project.imageUrl} 
+          codeUrl={project.codeUrl}
+          key={project.imageUrl}
         />
       ))}
     </WorkContainer>
@@ -24,6 +27,8 @@ const WorkContainer = Styled.div`
   justify-content: flex-start;
   width: 100%;
   height: 100%;
+  border-top: 1px solid rgb(40, 40, 40);
+  border-bottom: 1px solid rgb(40, 40, 40);
 
   @media (min-width: 800px) {
     flex-direction: row;
@@ -32,6 +37,7 @@ const WorkContainer = Styled.div`
     align-items: center;
     margin: 2rem 0;
     min-height: 100vh;
+    border: none;
 
     div.project {
       width: 26%;

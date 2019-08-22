@@ -57,16 +57,7 @@ const Container = Styled.div`
   background-image: linear-gradient(#0569d6, #55f9a6);
   box-shadow: 0px 0px 20px rgb(40, 40, 40);
 
-  /* @media (min-width: 500px) {
-    background-image: linear-gradient(#0569d6, #55f9a6);
-  } */
-
-  /* @media (min-width: 800px) {
-    background-image: linear-gradient(cyan, magenta);
-  } */
-
   button {
-    
     position: fixed;
     top: 1rem;
     left: 1rem;
